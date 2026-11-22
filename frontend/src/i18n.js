@@ -1,0 +1,48 @@
+const messages = {
+  tr: {
+    navHome: 'Keşfet', navSubscription: 'Aboneliğim', navHistory: 'Siparişlerim',
+    signIn: 'Giriş yap / Kayıt ol', signOut: 'Çıkış yap', lang: 'EN',
+    eyebrow: 'KAHVE MOLAN, YENİDEN TASARLANDI', heroTitle: 'Şehrin ritmine\nkahveyle karış.',
+    heroBody: 'Tek abonelik, İzmir’in en sevilen kahvecileri. Favori kahveni keşfet, sıranı beklemeden al.',
+    nearby: 'Yakınındaki kahveciler', viewAll: 'Tümünü gör', search: 'Dükkân veya semt ara',
+    open: 'Şu an açık', menu: 'Menüyü keşfet', from: 'başlayan fiyatlarla',
+    plans: 'Sana uygun bir kahve planı', plansBody: 'Her güne iyi bir kahve molası ekle.',
+    perMonth: '/ ay', coffees: 'kahve / ay', unlimited: 'Sınırsız kahve', choose: 'Planı seç',
+    myOrders: 'Sipariş geçmişim', noOrders: 'Henüz siparişin yok.',
+    shopDetail: 'Dükkân detayları', order: 'Sipariş oluştur', placeOrder: 'Siparişi onayla',
+    size: 'Boyut', sugar: 'Şeker', milk: 'Süt tercihi', shots: 'Ek shot',
+    qrTitle: 'Kahven hazır olduğunda göster', qrBody: 'Bu QR kod siparişine özeldir. Dükkân görevlisi tarayarak doğrulayabilir.',
+    loginTitle: 'Kahve molana devam et', phone: 'Cep telefonu', sendOtp: 'Doğrulama kodu gönder',
+    otp: 'SMS doğrulama kodu', verify: 'Doğrula ve devam et', fullName: 'Ad soyad',
+    complete: 'Profilini tamamla', welcome: 'Tekrar hoş geldin', empty: 'Sonuç bulunamadı.',
+    loading: 'Yükleniyor…', error: 'Bir sorun oluştu.', credits: 'kalan kahve hakkı',
+    status: 'Durum', price: 'Fiyat', details: 'Detayları gör', back: 'Geri dön',
+    mapNote: 'Haritadaki dükkânları keşfet', searchLabel: 'Ara', noSubscription: 'Aktif aboneliğin görünmüyor.',
+    success: 'İşlem başarılı', location: 'Konumun', locate: 'Konumumu kullan',
+  },
+  en: {
+    navHome: 'Discover', navSubscription: 'My subscription', navHistory: 'My orders',
+    signIn: 'Sign in / Register', signOut: 'Sign out', lang: 'TR',
+    eyebrow: 'YOUR COFFEE BREAK, REIMAGINED', heroTitle: 'Find your rhythm,\none cup at a time.',
+    heroBody: 'One subscription, Izmir’s favorite cafés. Discover your next coffee and skip the wait.',
+    nearby: 'Coffee near you', viewAll: 'View all', search: 'Search café or neighborhood',
+    open: 'Open now', menu: 'Explore menu', from: 'starting from',
+    plans: 'A plan made for your coffee habit', plansBody: 'Add a better coffee break to every day.',
+    perMonth: '/ month', coffees: 'coffees / month', unlimited: 'Unlimited coffee', choose: 'Choose plan',
+    myOrders: 'Order history', noOrders: 'No orders yet.',
+    shopDetail: 'Café details', order: 'Place an order', placeOrder: 'Confirm order',
+    size: 'Size', sugar: 'Sugar', milk: 'Milk preference', shots: 'Extra shots',
+    qrTitle: 'Show this when your coffee is ready', qrBody: 'This QR code belongs to your order. Café staff can scan and verify it.',
+    loginTitle: 'Pick up where your coffee left off', phone: 'Mobile number', sendOtp: 'Send verification code',
+    otp: 'SMS verification code', verify: 'Verify and continue', fullName: 'Full name',
+    complete: 'Complete your profile', welcome: 'Welcome back', empty: 'No results found.',
+    loading: 'Loading…', error: 'Something went wrong.', credits: 'coffee credits left',
+    status: 'Status', price: 'Price', details: 'View details', back: 'Go back',
+    mapNote: 'Explore cafés on the map', searchLabel: 'Search', noSubscription: 'No active subscription found.',
+    success: 'Success', location: 'Your location', locate: 'Use my location',
+  },
+}
+
+export function translate(language, key) {
+  return messages[language]?.[key] ?? messages.tr[key] ?? key
+}
