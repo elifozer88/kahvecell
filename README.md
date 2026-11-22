@@ -32,6 +32,24 @@ npm run dev
 
 Web app: http://127.0.0.1:5173
 
+## Screenshots
+
+| Sign in / Register | Discover cafés and map |
+|---|---|
+| ![KahveCell sign-in screen](frontend/public/screenshots/login.png) | ![KahveCell café discovery and map](frontend/public/screenshots/discover.png) |
+
+| Café details and menu | Customize an order |
+|---|---|
+| ![Café detail and menu](frontend/public/screenshots/shop-detail.png) | ![Order customization](frontend/public/screenshots/order.png) |
+
+| Subscription plans | Order history |
+|---|---|
+| ![Subscription plans](frontend/public/screenshots/subscription.png) | ![Order history](frontend/public/screenshots/history.png) |
+
+| Signed order QR |
+|---|
+| ![Signed pickup QR screen](frontend/public/screenshots/order-qr.png) |
+
 ## Demo notes
 
 - SMS OTP is simulated; the fixed demo code is `1234`.
